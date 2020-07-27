@@ -3,7 +3,7 @@ import MenuMob from './header/MenuMob';
 import Nav from './header/Nav';
 import NavDois from './header/NavDois';
 import Pesquisa from './header/Pesquisa';
-import Logo from './header/Logo';
+import Address from "./header/Address";
 
 export default class Header extends React.Component{
 
@@ -14,7 +14,7 @@ export default class Header extends React.Component{
 				<Nav/>
 				<NavDois/>
 				<Pesquisa/>
-				<Logo/>
+				<Address/>
 			</div>
 		)
 	}

@@ -1,44 +1,159 @@
+/**general**/
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-a{
+.nav-um a{
+	padding:10px 0;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-size: 10px;
 	text-decoration: none;
 	color:white;
+	background:#041E50;
 }
 
+.icon{
+	vertical-align: middle;
+	margin-left: 10px;
+	position: relative;
+	left: -20px;
+	top: -2px;
+}
+
+/**small Smartphone**/
 @media screen and (max-width: 480px){
-
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px){
-
-}
-
-@media screen and (min-width: 769px) and (max-width: 1199px){
-
-}
-
-@media screen and (min-width: 1200px){
-	.nav-um{
-		display: flex;
+		.header{
+			display: flex;
+		}
+		.nav-um{
 		margin: 0 auto;
-		width: 1280px;
-		height: 37px;
-		background:#041E50;
+		display: none;
+		flex-direction: column;
+		height: 37px;	
 	}
 
-	nav-um a{
+	.nav-um a{ 
+		border-left: none;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+/**medium Smartphones**/
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.nav-um{
+		margin: 0 auto;
+		display: none;
+		flex-direction: column;
+		height: 37px;	
+	}
+
+	.nav-um a{ 
+		width: 100%;
+	}
+
+}
+/**Large Smartphones and Notebooks**/
+@media screen and (min-width: 769px) and (max-width: 1199px){
+	.nav-um{
+		display: flex;	
+	}
+
+	.nav-um a{ 
+		border-left:1px solid #C4C4C4;
+		width: 25%;
+	}
+
+	.botaoMob{
+		display: none;
+	}
+}
+/**xlarges screen**/
+@media screen and (min-width: 1200px){
+
+/**header**/
+	.nav-um{
+		margin: 0 auto;
+		display: flex;
+		max-width: 1280px;
+		height: 37px;	
+		
+	}
+
+	.nav-um a{
+		font-family: 'Lato', sans-serif;
+		border-left:1px solid #888;
+		width: 25%;
+		vertical-align: middle;
 		text-align: center;
 		font-size: 10px;
 	}
 
-	li{
-		width: calc(1280 / 4);
-		padding-left: 50px;
-		text-decoration: none;
-		display: inline-block;
+	.nav-um span{
+		font-weight: bold;
 	}
+
+	.botaoMob{
+		display: none;
+	}
+
+	.pes{
+		border: none;
+	}
+
+	.icon1{
+		position: relative;
+		width:17px;
+		height: 21px;
+	}
+
+	.icon2{
+		position: relative;
+		width: 19px;
+		height: 19px;
+	}
+
+	.icon3{
+		position: relative;
+		width:17px;
+		height:17px;
+	}
+
+	.icon4{
+		width: 24px;
+		height: 17px;
+		
+	}
+
+	.centro{
+		margin: 0 auto;
+		display: flex;
+		max-width: 1280px;
+		height: 79px;
+	}
+
+	.logo{
+		text-align: right;
+		padding-right:0;
+		width:40%;
+		max-width: 150px;
+		height: 70px;
+
+		
+	}
+
+	.search{
+		width: 30%;
+		text-align: right;		
+	}
+
+	.address{
+		text-align: right;
+        max-width:30px;
+		width: 15%;	
+	}
+
 }
