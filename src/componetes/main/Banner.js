@@ -16,7 +16,14 @@ export default class Banner extends React.Component{
    {
     original: '/img/banner-2.png',
  
-  },  
+  },
+{
+    original: '/img/banner-2.png',
+  },
+   {
+    original: '/img/banner-2.png',
+ 
+  },   
 
 ];
     return <ImageGallery items={images} showThumbnails={false} showPlayButton={false}showBullets={true}showFullscreenButton={false} />;

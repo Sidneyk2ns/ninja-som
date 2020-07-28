@@ -132,10 +132,17 @@
 		height: 17px;
 		
 	}
+
+	.centro{
+		width: 1280px;
+		height: 40px;
+		position: relative;
+		margin: 15px 0;
+		padding: 20px 0;
+	}
+
 	.pesquisa{
 		left: 50%;
-		order: 3;
-		float: right;
 		position: relative;
 		left: -32px;
 		top: 7PX;
@@ -146,15 +153,12 @@
 	}
 	
 	.search{
-		order: 4;
-		float: right;
 		position: relative;
-		top: 5;
+		top: -5;
 		vertical-align: middle;
 	}
 
 	.telefone{
-		order: 2;
 		float: right;
 		position: relative;
 		vertical-align: middle;
@@ -162,7 +166,6 @@
 	}
 
 	.address{
-		order: 1;
 		float: right;
 		top: 5px;
 		position: relative;
@@ -172,6 +175,70 @@
 	.image-galery{
 		margin: 0 auto;
 		max-width: 1280px;
+	}
+
+	.instrumentos{
+		margin: 0 auto;
+		display: flex;
+		max-width: 1280px;
+	}
+
+	.inst-single{
+		padding:15px 0;
+		margin-left: 100px;
+		width: 25%;
+	}
+
+	.inst-single H2{
+		margin-left: 25px;
+		text-align: left;
+		font-family: 'Lato', sans-serif;
+		font-size: 14px;
+		color: #C4C4C4;
+	}
+
+	.banner_som{
+		margin: 0 auto;
+		max-width:1280px;
+	}
+
+	.banner1{
+		float: left;
+		width: 640px;
+		height: 386px;
+		background-image: url("/img/SRH-1.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+
+	.banner2{
+		float: right;
+		width: 640px;
+		height: 386px;
+		background-image: url("/img/MSe-3.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+
+	.banner_som h2{
+		text-align: justify;
+		color: white;
+		position: relative;
+		top: 50%;
+		left: 40%;
+		
+	}
+
+.banner_som button{
+		color: white;
+		border: 1px solid white;
+		border-radius: 6px;
+		width: 155px;
+		height: 50px;
+		background: transparent;
+		position: relative;
+		top: 210px;
+		left: 40%;
 	}
 
 }
