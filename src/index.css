@@ -15,6 +15,11 @@
 	background:#041E50;
 }
 
+.header{
+	width: 1280px;
+	margin: 0 auto;	
+}
+
 .icon{
 	vertical-align: middle;
 	margin-left: 10px;
@@ -127,33 +132,46 @@
 		height: 17px;
 		
 	}
-
-	.centro{
-		margin: 0 auto;
-		display: flex;
-		max-width: 1280px;
-		height: 79px;
+	.pesquisa{
+		left: 50%;
+		order: 3;
+		float: right;
+		position: relative;
+		left: -32px;
+		top: 7PX;
 	}
 
 	.logo{
-		text-align: right;
-		padding-right:0;
-		width:40%;
-		max-width: 150px;
-		height: 70px;
-
-		
+		margin-left:30px ;
+	}
+	
+	.search{
+		order: 4;
+		float: right;
+		position: relative;
+		top: 5;
+		vertical-align: middle;
 	}
 
-	.search{
-		width: 30%;
-		text-align: right;		
+	.telefone{
+		order: 2;
+		float: right;
+		position: relative;
+		vertical-align: middle;
+		top: 5px;
 	}
 
 	.address{
-		text-align: right;
-        max-width:30px;
-		width: 15%;	
+		order: 1;
+		float: right;
+		top: 5px;
+		position: relative;
+		vertical-align: middle;	
+	}
+
+	.image-galery{
+		margin: 0 auto;
+		max-width: 1280px;
 	}
 
 }
